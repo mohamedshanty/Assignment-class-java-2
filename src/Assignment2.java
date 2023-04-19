@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Assignment2 {
     public static void main(String[] args){
-        /*Write a Java program to find the sum of first 10 natural
+        /* 1- Write a Java program to find the sum of first 10 natural
         numbers like: 1,2,3,4,5,6,7,8,9,10*/
         /*int sum = 0;
         for (int i = 0; i <10 ; i++){
@@ -13,9 +13,9 @@ public class Assignment2 {
 
 
 
-        /*Write a program in Java to display n terms of natural
+        /* 2- Write a program in Java to display n terms of natural
         number and their sum */
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.println("Enter the number");
         int number = input.nextInt();
         System.out.print("The first " + number + " natural numbers are: ");
@@ -24,6 +24,20 @@ public class Assignment2 {
             System.out.print(i+"");
             sum += i;
         }
-        System.out.println("\nThe sum of the first " + number +" natural numbers is: " + sum);
+        System.out.println("\nThe sum of the first " + number +" natural numbers is: " + sum);*/
+
+
+
+        /* 3- Write a program in Java to display the cube of the
+        number up to given an integer*/
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int number = input.nextInt();
+        for (int i =1 ; i<= number ; i++){
+            System.out.printf("number%d: ",i);
+            int a = i * i * i ;
+            System.out.print(a);
+            System.out.println("");
+        }
     }
 }
