@@ -79,7 +79,10 @@ public class Assignment2 {
 
 
         // function question 10
-        power();
+        /*power();*/
+
+        // function question 11
+        signIn();
     }
 
     // function
@@ -201,17 +204,55 @@ public class Assignment2 {
 
 
 
-    /*Write a Java Function to get the power for numbers like:
+    /* 10- Write a Java Function to get the power for numbers like:
     Enter The Number:6
     Enter The Power:36
     Note/ don’t use Math (build the function)*/
-    public static int power(){
+    /*public static int power(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the base power:");
         int number = input.nextInt();
         int power = number * number;
         System.out.println("Your power is " + power);
         return power;
+    }*/
+
+
+
+
+    /* 11- Write a Java Function and call It signIn, that ask the
+    user to input the username, if username equal Alazhar ,
+    ask him to input password, if password equal university,
+    print Sign In Successfully like:
+    Enter The Username:
+    Alazhar
+    Enter The Password:
+    university
+    Sign In Successfully*/
+    public static void signIn() {
+        Scanner input = new Scanner(System.in);
+
+        // Input username
+        System.out.println("Enter the username: ");
+        String username = input.nextLine();
+
+        // Check if username is correct
+        if (username.equals("Alazhar")) {
+
+            // Input password
+            System.out.println("Enter the password: ");
+            String password = input.nextLine();
+
+            // Check if password is correct
+            if (password.equals("university")) {
+                System.out.println("Sign in successful!");
+            } else {
+                System.out.println("Incorrect password.");
+            }
+
+        } else {
+            System.out.println("Incorrect username.");
+        }
     }
 }
 
