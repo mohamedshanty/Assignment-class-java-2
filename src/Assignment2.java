@@ -30,7 +30,7 @@ public class Assignment2 {
 
         /* 3- Write a program in Java to display the cube of the
         number up to given an integer*/
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.println("Enter the number");
         int number = input.nextInt();
         for (int i =1 ; i<= number ; i++){
@@ -38,6 +38,25 @@ public class Assignment2 {
             int a = i * i * i ;
             System.out.print(a);
             System.out.println("");
+        }*/
+
+
+
+        // function question 4
+        multiplication();
+    }
+
+    // function
+    /* 4- Write a Function in Java to display the multiplication
+    table vertically from 1 to n*/
+    public static int multiplication(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int number = input.nextInt();
+        for (int i = 1 ; i<= number ; i++){
+            System.out.printf("1 * %d=%d",i,i);
+            System.out.println("");
         }
+        return number;
     }
 }
