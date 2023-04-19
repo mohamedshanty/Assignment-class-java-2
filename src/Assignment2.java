@@ -65,7 +65,16 @@ public class Assignment2 {
 
 
         // function question 8
-        reverse();
+        /*reverse();*/
+
+
+
+        // function question 9
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = input.nextInt();
+        int absValue = absoluteValue(num);
+        System.out.println("Absolute value: " + absValue);
     }
 
     // function
@@ -133,7 +142,7 @@ public class Assignment2 {
 
     /* 8- Write a Java Function to input 5 numbers and get the
     reverse*/
-    public static void reverse(){
+    /*public static void reverse(){
         Scanner input = new Scanner(System.in);
         int num1, num2, num3, num4, num5;
 
@@ -167,6 +176,21 @@ public class Assignment2 {
                 default:
                     break;
             }
+        }
+    }*/
+
+
+
+
+    /* 9- Write a Java Function to get the absolutes Value like:
+    Enter The Nubmer:-10
+    outputs:10
+    Note/ don’t use Math (build the function)*/
+    public static int absoluteValue(int num) {
+        if (num < 0) {
+            return -num;
+        } else {
+            return num;
         }
     }
 }
