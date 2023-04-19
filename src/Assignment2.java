@@ -173,7 +173,7 @@ public class Assignment2 {
 
         /* 17- Write a java program that ask the user to input a
         number and print if it positive or negative or zero*/
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
 
         System.out.print("Enter a number: ");
         int num = input.nextInt();
@@ -184,9 +184,33 @@ public class Assignment2 {
             System.out.println("The number is negative.");
         } else {
             System.out.println("The number is zero.");
-        }
+        }*/
 
-        input.close();
+
+
+
+        /* 18- Write a java program Fibonacci series ( first 10
+        numbers)
+        the series start 1 , 1
+        the next number will be 1 + 1 = 2
+        the series:
+        1 , 1 , 2
+        the next number will be 1+2 = 3
+        the series is:
+        1 , 1, 2 , 3
+        the next number 2+3 = 5
+        the series is:
+        1 , 1, 2 ,3 ,5 .... (to reach 10 numbers)*/
+        int n = 10;
+        int first = 1;
+        int second = 1;
+        System.out.print(first + " " + second + " ");
+        for (int i = 3; i <= n; i++) {
+            int third = first + second;
+            System.out.print(third + " ");
+            first = second;
+            second = third;
+        }
     }
 }
 
