@@ -82,7 +82,27 @@ public class Assignment2 {
         /*power();*/
 
         // function question 11
-        signIn();
+        /*signIn();*/
+
+
+        /* 12- Write a Java program to print this triangle
+        1
+        0 1
+        1 0 1
+        0 1 0 1
+        1 0 1 0 1*/
+        int n=5;
+        for (int i=1; i<=n; i++){
+            for (int j=1 ; j<=i; j++){
+                if ((i+j)%2 == 0){
+                    System.out.print("1");
+                }
+                else {
+                    System.out.print("0");
+                }
+            }
+            System.out.println();
+        }
     }
 
     // function
@@ -229,7 +249,7 @@ public class Assignment2 {
     Enter The Password:
     university
     Sign In Successfully*/
-    public static void signIn() {
+    /*public static void signIn() {
         Scanner input = new Scanner(System.in);
 
         // Input username
@@ -253,6 +273,8 @@ public class Assignment2 {
         } else {
             System.out.println("Incorrect username.");
         }
-    }
+    }*/
+
+
 }
 
