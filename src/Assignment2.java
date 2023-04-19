@@ -106,13 +106,40 @@ public class Assignment2 {
 
             /* 13- Write a java program the print the square numbers from 1
             , 100*/
-            int square = 0;
+            /*int square = 0;
             for (int i = 1; i <= 10; i++) {
                 square = i * i;
                 System.out.println(square + " : " + i);
+            }*/
+
+
+
+        /* 14- Write a java program to print this pattern
+        *
+        * *
+        * * *
+        * * * *
+        * * * * *
+        * * * * *
+        * * * *
+        * * *
+        * *
+        **/
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
             }
+            System.out.println();
+        }
+        for (int i = n-1; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
         }
     }
+}
 
     // function
     /* 4- Write a Function in Java to display the multiplication
