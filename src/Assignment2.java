@@ -43,13 +43,17 @@ public class Assignment2 {
 
 
         // function question 4
-        multiplication();
+        /*multiplication();*/
+
+
+        // function question 5
+        sum();
     }
 
     // function
     /* 4- Write a Function in Java to display the multiplication
     table vertically from 1 to n*/
-    public static int multiplication(){
+    /*public static int multiplication(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number");
         int number = input.nextInt();
@@ -57,6 +61,23 @@ public class Assignment2 {
             System.out.printf("1 * %d=%d",i,i);
             System.out.println("");
         }
-        return number;
+        return number;*/
+
+
+
+
+        /* 5- write Java Function in Java to get the sum of the first
+        100 odd numbers from 1 to 100 like :
+        1, 3, 5, 7 .......
+        The sum is: {get the sum}*/
+    public static int sum(){
+        int sum =0;
+        for (int i = 1 ; i<=100 ; i++){
+            if (i % 2 == 1){
+                sum += i;
+            }
+        }
+        System.out.println("your summation odd number from 1 to 100 is :"+sum);
+        return sum;
     }
 }
