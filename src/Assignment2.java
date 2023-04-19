@@ -70,11 +70,16 @@ public class Assignment2 {
 
 
         // function question 9
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.println("Enter a number: ");
         int num = input.nextInt();
         int absValue = absoluteValue(num);
-        System.out.println("Absolute value: " + absValue);
+        System.out.println("Absolute value: " + absValue);*/
+
+
+
+        // function question 10
+        power();
     }
 
     // function
@@ -186,12 +191,27 @@ public class Assignment2 {
     Enter The Nubmer:-10
     outputs:10
     Note/ don’t use Math (build the function)*/
-    public static int absoluteValue(int num) {
+    /*public static int absoluteValue(int num) {
         if (num < 0) {
             return -num;
         } else {
             return num;
         }
+    }*/
+
+
+
+    /*Write a Java Function to get the power for numbers like:
+    Enter The Number:6
+    Enter The Power:36
+    Note/ don’t use Math (build the function)*/
+    public static int power(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the base power:");
+        int number = input.nextInt();
+        int power = number * number;
+        System.out.println("Your power is " + power);
+        return power;
     }
 }
 
