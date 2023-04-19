@@ -91,7 +91,7 @@ public class Assignment2 {
         1 0 1
         0 1 0 1
         1 0 1 0 1*/
-        int n=5;
+        /*int n=5;
         for (int i=1; i<=n; i++){
             for (int j=1 ; j<=i; j++){
                 if ((i+j)%2 == 0){
@@ -101,7 +101,16 @@ public class Assignment2 {
                     System.out.print("0");
                 }
             }
-            System.out.println();
+            System.out.println();*/
+
+
+            /* 13- Write a java program the print the square numbers from 1
+            , 100*/
+            int square = 0;
+            for (int i = 1; i <= 10; i++) {
+                square = i * i;
+                System.out.println(square + " : " + i);
+            }
         }
     }
 
@@ -274,7 +283,4 @@ public class Assignment2 {
             System.out.println("Incorrect username.");
         }
     }*/
-
-
-}
 
