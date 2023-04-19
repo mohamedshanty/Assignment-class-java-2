@@ -52,7 +52,16 @@ public class Assignment2 {
 
 
         // function question 6
-            triangle();
+        /*triangle();*/
+
+
+        // function question 7
+        Scanner input = new Scanner(System.in);
+        int i,fact=1;
+        System.out.println("Enter your factorial");
+        int number = input.nextInt();
+        fact = factorial(number);
+        System.out.println("Factorial of "+number+" is: "+fact);
     }
 
     // function
@@ -92,7 +101,7 @@ public class Assignment2 {
     /* 6- Write a program in Java to make such a pattern like
     right angle triangle with a number which will repeat a
     number in a row */
-    public static void triangle(){
+    /*public static void triangle(){
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of rows: ");
         int rows = input.nextInt();
@@ -103,5 +112,16 @@ public class Assignment2 {
             }
             System.out.println();
     }
+    }*/
+
+
+
+    /* 7- Write a Function in Java to calculate the factorial for
+    given number*/
+    static int factorial(int n){
+        if (n == 0)
+            return 1;
+        else
+            return(n * factorial(n-1));
     }
 }
