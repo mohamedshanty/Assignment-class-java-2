@@ -147,13 +147,28 @@ public class Assignment2 {
         3 2 1
         2 1
         1*/
-        int n = 5;
+        /*int n = 5;
         for (int i = n; i >= 1; i--) {
             for (int j = i; j >= 1; j--) {
                 System.out.print(j + " ");
             }
             System.out.println();
-        }
+        }*/
+
+
+        /* 16- Write a java program to allow the user to input 3 values
+        and get the max and the min value */
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+        System.out.print("Enter the third number: ");
+        int num3 = input.nextInt();
+        int max = Math.max(Math.max(num1, num2), num3);
+        int min = Math.min(Math.min(num1, num2), num3);
+        System.out.println("The max value is: " + max);
+        System.out.println("The min value is: " + min);
     }
 }
 
