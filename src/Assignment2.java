@@ -211,6 +211,25 @@ public class Assignment2 {
             first = second;
             second = third;
         }
+
+
+
+        /*write program to give my the result for the first
+        10 numbers like: 1,1,1,3,5,9,17,31
+        The next number = 31+17+9 = 57
+        The next = 57+31+17 = 105*/
+        int num1 = 1;
+        int num2 = 1;
+        int num3 = 1;
+        int next;
+        System.out.print(num1 + " " + num2 + " " + num3 + " ");
+        for (int i = 4; i <= 10; i++) {
+            next = num1 + num2 + num3;
+            System.out.print(next + " ");
+            num1 = num2;
+            num2 = num3;
+            num3 = next;
+        }
     }
 }
 
