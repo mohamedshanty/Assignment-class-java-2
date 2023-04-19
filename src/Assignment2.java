@@ -158,7 +158,7 @@ public class Assignment2 {
 
         /* 16- Write a java program to allow the user to input 3 values
         and get the max and the min value */
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
         System.out.print("Enter the first number: ");
         int num1 = input.nextInt();
         System.out.print("Enter the second number: ");
@@ -168,7 +168,25 @@ public class Assignment2 {
         int max = Math.max(Math.max(num1, num2), num3);
         int min = Math.min(Math.min(num1, num2), num3);
         System.out.println("The max value is: " + max);
-        System.out.println("The min value is: " + min);
+        System.out.println("The min value is: " + min);*/
+
+
+        /* 17- Write a java program that ask the user to input a
+        number and print if it positive or negative or zero*/
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = input.nextInt();
+
+        if (num > 0) {
+            System.out.println("The number is positive.");
+        } else if (num < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+
+        input.close();
     }
 }
 
