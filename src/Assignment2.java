@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Assignment2 {
-    private static int a;
     public static void main(String[] args){
         /* 1- Write a Java program to find the sum of first 10 natural
         numbers like: 1,2,3,4,5,6,7,8,9,10*/
@@ -56,12 +55,17 @@ public class Assignment2 {
 
 
         // function question 7
-        Scanner input = new Scanner(System.in);
-        int i,fact=1;
+        /*Scanner input = new Scanner(System.in);
+        int fact;
         System.out.println("Enter your factorial");
         int number = input.nextInt();
         fact = factorial(number);
-        System.out.println("Factorial of "+number+" is: "+fact);
+        System.out.println("Factorial of "+number+" is: "+fact);*/
+
+
+
+        // function question 8
+        reverse();
     }
 
     // function
@@ -118,10 +122,52 @@ public class Assignment2 {
 
     /* 7- Write a Function in Java to calculate the factorial for
     given number*/
-    static int factorial(int n){
+    /*static int factorial(int n){
         if (n == 0)
             return 1;
         else
             return(n * factorial(n-1));
+    }*/
+
+
+
+    /* 8- Write a Java Function to input 5 numbers and get the
+    reverse*/
+    public static void reverse(){
+        Scanner input = new Scanner(System.in);
+        int num1, num2, num3, num4, num5;
+
+        // Input numbers
+        System.out.println("Enter 5 numbers: ");
+        num1 = input.nextInt();
+        num2 = input.nextInt();
+        num3 = input.nextInt();
+        num4 = input.nextInt();
+        num5 = input.nextInt();
+
+        // Reverse numbers using for loop
+        System.out.print("Outputs: ");
+        for (int i = 5; i >= 1; i--) {
+            switch (i) {
+                case 1:
+                    System.out.print(num5 + " ");
+                    break;
+                case 2:
+                    System.out.print(num4 + " ");
+                    break;
+                case 3:
+                    System.out.print(num3 + " ");
+                    break;
+                case 4:
+                    System.out.print(num2 + " ");
+                    break;
+                case 5:
+                    System.out.print(num1 + " ");
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
+
