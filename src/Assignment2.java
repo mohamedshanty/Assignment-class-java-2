@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Assignment2 {
+    private static int a;
     public static void main(String[] args){
         /* 1- Write a Java program to find the sum of first 10 natural
         numbers like: 1,2,3,4,5,6,7,8,9,10*/
@@ -47,7 +48,11 @@ public class Assignment2 {
 
 
         // function question 5
-        sum();
+        /*sum();*/
+
+
+        // function question 6
+            triangle();
     }
 
     // function
@@ -66,11 +71,11 @@ public class Assignment2 {
 
 
 
-        /* 5- write Java Function in Java to get the sum of the first
-        100 odd numbers from 1 to 100 like :
-        1, 3, 5, 7 .......
-        The sum is: {get the sum}*/
-    public static int sum(){
+    /* 5- write Java Function in Java to get the sum of the first
+    100 odd numbers from 1 to 100 like :
+    1, 3, 5, 7 .......
+    The sum is: {get the sum}*/
+    /*public static int sum(){
         int sum =0;
         for (int i = 1 ; i<=100 ; i++){
             if (i % 2 == 1){
@@ -79,5 +84,24 @@ public class Assignment2 {
         }
         System.out.println("your summation odd number from 1 to 100 is :"+sum);
         return sum;
+    }*/
+
+
+
+
+    /* 6- Write a program in Java to make such a pattern like
+    right angle triangle with a number which will repeat a
+    number in a row */
+    public static void triangle(){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = input.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+    }
     }
 }
